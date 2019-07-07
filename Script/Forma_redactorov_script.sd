@@ -1,0 +1,92 @@
+﻿procedure Forma_redactorov;
+begin
+  //Runs the "TestEnvironment_TD32" tested application.
+  TestedApps.TestEnvironment_TD32.Run(1, true);
+  //Maximizes the 'FMain' window.
+  Aliases.TestEnvironment_TD32_.FMain.Maximize;
+  //Clicks the 'dxRibbonTab1|[0]|Форма редакторов' item of the 'dxRibbon' bar.
+  Aliases.TestEnvironment_TD32_.FMain.dxRibbon.ClickItemXY('dxRibbonTab1|[0]|Форма редакторов', 63, 11);
+  //Clicks the 'TcxCustomInnerMemo' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.mTest.mTestEdit.TcxCustomInnerMemo.Click(71, 13);
+  //Enters 'Hello[Enter]WORLD[Enter]!!!!!!' in the 'TcxCustomInnerMemo' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.mTest.mTestEdit.TcxCustomInnerMemo.Keys('Hello[Enter]WORLD[Enter]!!!!!!');
+  //Clicks the 'TcxButton' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton.ClickButton;
+  OCR.Recognize[Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel17].BlockByText['WORLD'].Click;
+  //Clicks the 'TcxCustomInnerTextEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.edTest.edTestEdit.TcxCustomInnerTextEdit.Click(62, 4);
+  //Enters the text 'Hi' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.edTest.edTestEdit.TcxCustomInnerTextEdit.SetText('Hi');
+  //Clicks the 'TcxButton2' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton2.ClickButton;
+  //Clicks the 'TcxLabel16' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel16.Click(8, 28);
+  //Clicks the 'TcxButton3' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton3.ClickButton;
+  OCR.Recognize[Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel8].BlockByText['False'].Click;
+  //Sets the state of the 'cbTestEdit' check box to cbChecked.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.cbTest.cbTestEdit.ClickButton(cbChecked);
+  //Clicks the 'TcxButton3' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton3.ClickButton;
+  OCR.Recognize[Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel8].BlockByText['True'].Click;
+  //Clicks the 'TcxCustomInnerTextEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.ceTest.ceTestEdit.TcxCustomInnerTextEdit.Click(97, 6);
+  //Enters the text '777' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.ceTest.ceTestEdit.TcxCustomInnerTextEdit.SetText('777');
+  //Clicks the 'TcxButton4' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton4.ClickButton;
+  OCR.Recognize[Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel9].BlockByText['777'].Click;
+  //Clicks the 'ccbTestEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.ccbTest.ccbTestEdit.Click(287, 7);
+  //Clicks the 'TcxCustomCheckComboBoxListBox' object.
+  Aliases.TestEnvironment_TD32_.TcxCheckComboBoxPopupWindow.TcxEditListBoxContainer.TcxCustomCheckComboBoxListBox.Click(210, 14);
+  //Clicks the 'TcxButton5' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton5.ClickButton;
+  //Clicks the 'TcxLabel5' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel5.Click(7, 28);
+  //Clicks the 'TcxCustomInnerTextEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.seTest.seTestEdit.TcxCustomInnerTextEdit.Click(145, 6);
+  //Enters the text '0' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.seTest.seTestEdit.TcxCustomInnerTextEdit.SetText('0');
+  //Clicks the 'seTestEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.seTest.seTestEdit.Click(279, 5);
+  //Clicks the 'seTestEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.seTest.seTestEdit.Click(279, 5);
+  //Clicks the 'seTestEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.seTest.seTestEdit.Click(279, 5);
+  //Clicks the 'TcxButton6' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton6.ClickButton;
+  //Clicks the 'TcxLabel18' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel18.Click(5, 28);
+  //Clicks the 'deTestEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.deTest.deTestEdit.Click(278, 7);
+  //Clicks the 'TcxPopupCalendar' object.
+  Aliases.TestEnvironment_TD32_.TcxDateEditPopupWindow.TcxPopupCalendar.Click(171, 95);
+  //Clicks the 'TcxButton7' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton7.ClickButton;
+  //Clicks the 'TcxLabel3' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel3.Click(15, 30);
+  //Clicks the 'peTestProgress' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.peTest.peTestProgress.Click(37, 9);
+  //Clicks the 'peTestUp' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.peTest.peTestUp.ClickButton;
+  //Clicks the 'TcxButton8' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton8.ClickButton;
+  //Clicks the 'TcxLabel4' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel4.Click(8, 24);
+  //Clicks the 'lueTestEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.lueTest.lueTestEdit.Click(261, 6);
+  //Clicks the 'TcxCustomLookupDBGrid' object.
+  Aliases.TestEnvironment_TD32_.TcxComboBoxPopupWindow.TcxCustomLookupDBGrid.Click(236, 4);
+  //Clicks the 'lueTestEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.lueTest.lueTestEdit.Click(281, 10);
+  //Clicks the 'lueTestEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pMainPanel.lueTest.lueTestEdit.Click(264, 6);
+  //Clicks the 'TcxCustomLookupDBGrid' object.
+  Aliases.TestEnvironment_TD32_.TcxComboBoxPopupWindow.TcxCustomLookupDBGrid.Click(230, 21);
+  //Clicks the 'TcxButton9' button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pButtonsPanel.TcxButton9.ClickButton;
+  //Clicks the 'TcxLabel5' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FEdits.sbMain.pLabelsPanel.TcxLabel5.Click(2, 26);
+  OCR.Recognize[Aliases.TestEnvironment_TD32_.FMain.MDIClient].BlockByText['По Форма редакторов х'].Click;
+end;

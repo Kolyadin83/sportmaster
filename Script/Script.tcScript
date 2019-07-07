@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="Forma_tree_list_script" key="{5BA84FB2-0509-4E75-BE96-8FA6AA1F7898}" path="Forma_tree_list_script.sd" />
+		<child name="Forma_redactorov_script" key="{9DA93974-FE3D-433F-A345-99F08E50A975}" path="Forma_redactorov_script.sd" />
+		<child name="Pivot_grid_script" key="{5C8A8CBB-3290-466D-B912-D3851AB558DB}" path="Pivot_grid_script.sd" />
+	</children>
+</Root>

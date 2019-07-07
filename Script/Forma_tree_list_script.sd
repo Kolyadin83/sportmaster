@@ -1,0 +1,29 @@
+﻿procedure Forma_tree_list;
+begin
+  //Runs the "TestEnvironment_TD32" tested application.
+  TestedApps.TestEnvironment_TD32.Run(1, true);
+  //Maximizes the 'FMain' window.
+  Aliases.TestEnvironment_TD32_.FMain.Maximize;
+  //Clicks the 'dxRibbonTab1|[0]|Форма с TreeList' item of the 'dxRibbon' bar.
+  Aliases.TestEnvironment_TD32_.FMain.dxRibbon.ClickItemXY('dxRibbonTab1|[0]|Форма с TreeList', 82, 10);
+  //Collapses the 2 row of the 'wChildView[1]' tree list.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.wChildView[1].Collapse(2);
+  //Collapses the 1 row of the 'tlTest' tree list.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.Collapse(1);
+  //Clicks the 'wChildView[2]' grid cell at row 1, column 'name'.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.wChildView[3].wChildView[2].ClickCell(1, 'name');
+  //Clicks the 'TcxCustomInnerTextEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.TcxMaskEdit.TcxCustomInnerTextEdit.Click(42, 8);
+  //Enters the text 'Name585543' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.TcxMaskEdit.TcxCustomInnerTextEdit.SetText('Name585543');
+  //Expands the 1 row of the 'tlTest' tree list.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.Expand(1);
+  //Expands the 2 row of the 'wChildView[1]' tree list.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.wChildView[1].Expand(2);
+  //Clicks the 'wChildView[2]' grid cell at row 0, column 'name'.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.wChildView[1].wChildView[2].ClickCell(0, 'name');
+  //Enters the text '' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.TcxMaskEdit.TcxCustomInnerTextEdit.SetText('');
+  //Clicks the 'MDIClient' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.Click(150, 899);
+end;

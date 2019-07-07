@@ -1,0 +1,73 @@
+﻿procedure Pivot_grid;
+begin
+  //Runs the "TestEnvironment_TD32" tested application.
+  TestedApps.TestEnvironment_TD32.Run(1, true);
+  //Maximizes the 'FMain' window.
+  Aliases.TestEnvironment_TD32_.FMain.Maximize;
+  //Clicks the 'dxRibbonTab1|[0]|Форма с PivotGrid' item of the 'dxRibbon' bar.
+  Aliases.TestEnvironment_TD32_.FMain.dxRibbon.ClickItemXY('dxRibbonTab1|[0]|Форма с PivotGrid', 47, 13);
+  //Clicks the 'pgTest' object with the right mouse button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.ClickR(77, 14);
+  //Moves the mouse cursor to the menu item specified and then simulates a single click.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.PopupMenu.Click('Show Field List');
+  //Drags the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Drag(529, 12, 1298, 765);
+  //Drags the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Drag(609, 14, 1192, 796);
+  //Closes the 'TcxPivotGridCustomizationForm' window.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridCustomizationForm.Close;
+  //Drags the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Drag(275, 15, -267, 128);
+  //Drags the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Drag(480, 16, -300, 124);
+  //Drags the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Drag(480, 13, -452, 11);
+  //Drags the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Drag(488, 14, -350, -1);
+  //Clicks the 'pgTest' object with the right mouse button.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.ClickR(184, 17);
+  //Moves the mouse cursor to the menu item specified and then simulates a single click.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.PopupMenu.Click('Show Field List');
+  //Clicks the 'TcxFieldListListBox' object.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridCustomizationForm.TcxFieldListListBox.Click(61, 11);
+  //Selects the 'Data Area' item of the 'TcxComboBox' combo box.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridCustomizationForm.TcxGroupBox.TcxComboBox.ClickItem('Data Area');
+  //Clicks the 'TcxButton' button.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridCustomizationForm.TcxGroupBox.TcxButton.ClickButton;
+  //Clicks the 'TcxFieldListListBox' object.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridCustomizationForm.TcxFieldListListBox.Click(59, 13);
+  //Selects the 'Row Area' item of the 'TcxComboBox' combo box.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridCustomizationForm.TcxGroupBox.TcxComboBox.ClickItem('Row Area');
+  //Clicks the 'TcxButton' button.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridCustomizationForm.TcxGroupBox.TcxButton.ClickButton;
+  //Closes the 'TcxPivotGridCustomizationForm' window.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridCustomizationForm.Close;
+  //Clicks the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Click(57, 88);
+  //Clicks the 'TcxCustomInnerCheckListBox' object.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridFilterPopupWindow.TcxPivotGridFilterPopupListBox.TcxCustomInnerCheckListBox.Click(5, 7);
+  //Clicks the 'TcxCustomInnerCheckListBox' object.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridFilterPopupWindow.TcxPivotGridFilterPopupListBox.TcxCustomInnerCheckListBox.Click(8, 45);
+  //Clicks the 'TcxButton' button.
+  Aliases.TestEnvironment_TD32_.TcxPivotGridFilterPopupWindow.TcxButton.ClickButton;
+  //Clicks the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Click(9, 113);
+  //Clicks the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Click(28, 133);
+  //Clicks the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Click(562, 37);
+  //Clicks the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Click(923, 114);
+  //Enters the text '300' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.TcxSpinEdit.TcxCustomInnerTextEdit.SetText('300');
+  //Clicks the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Click(1012, 156);
+  //Enters the text '600' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.TcxSpinEdit2.TcxCustomInnerTextEdit.SetText('600');
+  //Clicks the 'pgTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.Click(1127, 176);
+  //Enters the text '400' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FPivotGrid.pgTest.TcxSpinEdit2.TcxCustomInnerTextEdit.SetText('400');
+  //Clicks the 'MDIClient' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.Click(147, 902);
+end;
